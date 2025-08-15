@@ -1,0 +1,43 @@
+PS C:\Users\sh42i\OneDrive\デスクトップ> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\sh42i\OneDrive\デスクトップ
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/08/15     12:54                git_challenge
+
+
+PS C:\Users\sh42i\OneDrive\デスクトップ> cd git_challenge
+PS C:\Users\sh42i\OneDrive\デスクトップ\git_challenge> git init
+Initialized empty Git repository in C:/Users/sh42i/OneDrive/デスクトップ/git_challenge/.git/
+PS C:\Users\sh42i\OneDrive\デスクトップ\git_challenge> New-Item -Path . -Name "Hello_world.txt" -ItemType "File"
+
+
+    ディレクトリ: C:\Users\sh42i\OneDrive\デスクトップ\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/08/15     13:03              0 Hello_world.txt
+
+
+PS C:\Users\sh42i\OneDrive\デスクトップ\git_challenge> git add Hello_world.txt
+PS C:\Users\sh42i\OneDrive\デスクトップ\git_challenge> git commit -m "最初のコミット"           
+[main (root-commit) 8bde19d] 最初のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hello_world.txt
+PS C:\Users\sh42i\OneDrive\デスクトップ\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\sh42i\OneDrive\デスクトップ\git_challenge> git add Hello_world.txt
+PS C:\Users\sh42i\OneDrive\デスクトップ\git_challenge> git commit -m "2回目のコミット"
+[main 9dcf717] 2回目のコミット
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\sh42i\OneDrive\デスクトップ\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\sh42i\OneDrive\デスクトップ\git_challenge> git log --oneline                                  
+9dcf717 (HEAD -> main) 2回目のコミット
+8bde19d 最初のコミット
